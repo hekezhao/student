@@ -3,7 +3,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<style>
+		body{
+			text-align:center;
+		}
+	</style>
 <title></title>
 </head>
 <body>

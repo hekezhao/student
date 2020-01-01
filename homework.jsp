@@ -9,8 +9,15 @@
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.content{
+			margin-left:250px;
+			margin-right:250px;
+		}
+	</style>
 </head>
 <body>
+<div class="content">
 	<ul class="nav nav-tabs">
   		<li class="active"><a>作业</a></li>
 	</ul>
@@ -49,5 +56,6 @@
 		</div>
 		<%} 
 	} %>
+</div>
 </body>
 </html>

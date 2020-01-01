@@ -9,8 +9,15 @@
 	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">  
 	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
 	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style>
+		.content{
+			margin-left:250px;
+			margin-right:250px;
+		}
+	</style>
 </head>
 <body>
+<div class="content">
 	<div class="page-header">
     	<h2>延期申请</h2>
 	</div>
@@ -35,5 +42,6 @@
     		<input style="border-radius:5px;border-style:none;background-color:MediumSeaGreen;color:white;width:150px" type="submit" value="提交" />
     	</div>
 	</form>
+</div>
 </body>
 </html>
