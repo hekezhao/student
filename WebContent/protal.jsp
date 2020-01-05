@@ -17,9 +17,12 @@
 </head>
 <body>
 <div class="content">
+	<ul class="nav nav-tabs">
+  		<li class="active"><a><%=session.getAttribute("sname") %></a></li>
+	</ul>
 	<ul class="nav nav-pills nav-stacked">
-        <li><a href="/student/class?sno=201706061912">课程</a></li>
-        <li><a href="/student/inform?sno=201706061911">收件箱</a></li>
+        <li><a href="/student/class?sno=<%=session.getAttribute("sno") %>">课程</a></li>
+        <li><a href="/student/inform?sno=<%=session.getAttribute("sno") %>">收件箱</a></li>
     </ul>
  </div>
 </body>
