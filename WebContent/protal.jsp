@@ -20,7 +20,7 @@
 	<ul class="nav nav-tabs">
   		<li class="active"><a><%=session.getAttribute("sname") %></a></li>
 	</ul>
-	<ul class="nav nav-pills nav-stacked">
+	<ul class="nav nav-pills nav-stacked" style="text-align:center">
         <li><a href="/student/class?sno=<%=session.getAttribute("sno") %>">课程</a></li>
         <li><a href="/student/inform?sno=<%=session.getAttribute("sno") %>">收件箱</a></li>
     </ul>
