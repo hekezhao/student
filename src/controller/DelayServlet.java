@@ -19,6 +19,8 @@ public class DelayServlet extends HttpServlet {
 		DelayDao delayDao=new DelayDao();
 		Delay delay=new Delay();
 		String message=null;
+		String tmpReason=request.getParameter("reason");
+		String reason=new String(tmpReason.getBytes("ISO-8859-1"),"UTF-8");
 		try {
 			//获取提交的延期申请
 			delay.setCno(request.getParameter("cno"));
@@ -26,7 +28,7 @@ public class DelayServlet extends HttpServlet {
 			delay.setSno(request.getParameter("sno"));
 			delay.setTno(request.getParameter("tno"));
 			delay.setWorkTitle(request.getParameter("workTitle"));
-			delay.setReason(request.getParameter("reason"));
+			delay.setReason(reason);
 			delay.setDelayDays(request.getParameter("delayDays"));
 			boolean success=delayDao.addDelay(delay);//插入记录
 			if(success) {
